@@ -1,0 +1,287 @@
+/*
+Custom Css
+*/
+
+.nav{
+    background-color: whitesmoke!important;
+    height: 75px;
+}
+
+.search{
+    margin: 10px;
+    padding: 5px;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.navbar-icon {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65px;
+    height: 65px;
+    margin: 6px;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+}
+
+  
+
+.owl-carousel .item {
+    background-color: black; 
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;  /* Reduce este valor si hay demasiado espacio entre los elementos */
+}
+
+
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;  /* Ajusta este valor a tus necesidades */
+}
+
+  
+.icon {
+    margin-right: 10px;
+    font-size: 20px;  /* Reduce este valor si los iconos son demasiado grandes */
+    margin-top: -5px;
+}
+
+
+.lead{
+    font-size: 30px;
+}
+
+.lead1{
+    font-size: 22px;
+    font-weight: 350;
+}
+
+.aa{
+    color: white!important;
+}
+  
+.bg-dark{
+    background-color: #A25C29!important;
+}
+
+/*
+@font-face {
+    font-family: 'FaBrands';
+    src: url('assets/webfonts/font.woff') format('woff');
+    //Agrega aquí las fuentes adicionales en diferentes formatos si las tienes 
+}
+  
+body {
+    font-family: 'NombreDeLaFuente', sans-serif;
+}
+*/
+
+@keyframes fade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+  
+.fa-fade {
+    animation: fade 1s linear infinite;
+}
+
+.s{
+    font-size: 25px;
+}
+
+.navbar .dropdown-menu {
+    position: relative;
+    z-index: 1001;
+}
+
+.overlay-icons {
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Si deseas un fondo oscuro en el overlay */
+}
+
+.position-relative:hover .overlay-icons {
+    opacity: 1;
+}
+
+
+/* css seguimiento */
+
+.s {
+    background-color: #e3e5e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.s1 {
+    max-width: 400px;
+    width: 100%;
+}
+
+.card{
+    background-color: #EFE5DD;
+    align-items: center;
+    max-width: 800px;
+    border-radius: 15px!important;
+    padding: 20px;
+    margin: 0 auto; /* Agregamos esta línea para centrar la tarjeta */
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Poppins-Bold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 16px;
+}
+
+.Copyright{
+    background-color: #A25C29;
+}
+.Containershop{
+    background-color: #A25C29;
+}
+
+.card-custom {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+.categorias-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tipo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.categoria {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+.categoria.active {
+    background-color: #A25C29;
+    color: #fff;
+    border-color: #A25C29;
+}
+
+.container {
+    margin-bottom: 100px;
+}
+.btn-black {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+
+}
+.icon-small {
+    width: 100px;  /* Ajusta el tamaño según tus necesidades */
+    height: 100px;
+    margin-right: 8px;  /* Espacio entre la imagen y el botón */
+}
+.sidebar{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    float: left;
+}
+.cardshop{
+    background-color: #b17c54;
+    align-items: center;
+    max-width: 900px;
+    border-radius: 15px!important;
+    padding: 20px;
+    margin: auto; /* Agregamos esta línea para centrar la tarjeta */
+    width: 350px;
+    height: 900px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.categorias-container,
+.tipomuebles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #A25C29;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #A25C29;
+    color: #6c757d;
+}
+/* CSS personalizado para el carrusel */
+.carousel-img {
+    max-width:70%;
+    height: 600px;
+    /* Define el tamaño deseado para las imágenes en el carrusel */
+    max-height: 800px; /* Ajusta según tu diseño */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: block; /* Para asegurar que la imagen se centre correctamente */
+    
+}
+.carousel-inner{
+    background-color:black;
+}
+.productos{
+    border-color: #A25C29;
+}
+.indexbody{
+    background-color: #A25C29;
+}

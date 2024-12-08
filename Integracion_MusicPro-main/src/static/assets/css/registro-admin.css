@@ -1,0 +1,213 @@
+/* fuentes */
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../../fonts/poppins/Poppins-Regular.ttf'); 
+}
+  
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../../fonts/poppins/Poppins-Bold.ttf'); 
+}
+  
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../../fonts/poppins/Poppins-Medium.ttf'); 
+}
+  
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../../fonts/montserrat/Montserrat-Bold.ttf'); 
+}
+
+body {
+	height: 100vh;
+    width: 100vw!important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    background: #615769;
+    background: -webkit-linear-gradient(-135deg, #b4abb4, #3b3942);
+    background: -o-linear-gradient(-135deg, #b4abb4, #3b3942);
+    background: -moz-linear-gradient(-135deg, #b4abb4, #3b3942);
+    background: linear-gradient(-135deg, #b4abb4, #3b3942);
+}
+
+.container {
+    padding: 75px 30px 50px 30px;
+}
+
+.card{
+    width: 820px;
+    border-radius: 10px;
+}
+
+/* flecha para volver atrás */
+.volver-atras {
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    z-index: 99;
+}
+  
+.volver-atras2 {
+    position: absolute;
+    top: 32px; 
+    left: 25px; 
+    z-index: 99; 
+}
+  
+.volver-atras i,
+.volver-atras2 i {
+    margin-right: 5px;
+    color: #333333;
+    font-size: 18px;
+}
+
+/* título */
+.titulo {
+    font-size: 24px;
+    font-family: Poppins-Bold;
+    color: #333333;
+    text-align: center;
+    display: block;
+    margin-top: 60px!important; 
+    margin-bottom: 30px!important;
+}
+
+/* inputs */
+.input100 {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: flex;
+    width: 86%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+}
+
+.input100::placeholder {
+    opacity: 0.5; 
+}
+
+/* inputs focus color */
+
+.focus-input100 {
+    position: absolute;
+    border-radius: 25px;
+    border-color: rgba(87, 184, 70, 0.8);
+    bottom: 0;
+    left: 14px;
+    z-index: -1;
+    width: 91%; 
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(87, 184, 70, 0.8);
+}
+
+.input100:focus {
+    border: 1px solid rgba(87, 184, 70, 0.8);
+    outline: none!important; /* Evita el resaltado de borde predeterminado al hacer clic en el input */
+    box-shadow: 0px 0px 0px 0px; /* Elimina la sombra predeterminada del input al hacer clic */
+}
+
+.input100:focus + .focus-input100 {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+    z-index: 1; /* Asegura que la sombra esté por encima del input */
+}
+
+@-webkit-keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px rgba(87, 184, 70, 0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px rgba(87, 184, 70, 0.8);
+        opacity: 0;
+    }
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+    color: #57b846;
+    padding-left: 28px;
+}
+
+/* icono con input */
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #666666;
+    font-size: 15px;
+}
+
+.input-icon input {
+    padding-left: 40px;
+}
+
+
+/* botón registro*/
+
+.container-btn-registro {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+  
+.btn-registro {
+    font-family: Montserrat-Bold;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+  
+    height: 50px;
+    border-radius: 25px;
+    border-color: #676967;
+    background: #676967;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+  
+.btn-registro:hover {
+    background: #333333;
+    color: #fff;
+}
+
+

@@ -1,0 +1,56 @@
+/* diseño para el formulario que trae el detalle del producto */
+
+.lista{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+/* para quitar los puntos de la lista */
+.lista li{
+    list-style: none;
+} 
+
+
+.lista h2{
+    font-size: 18px;
+}
+
+.lista h4{
+    font-size: 16px;
+    margin-top: -16px;
+    padding-bottom: 10px;
+}
+
+.lista .btn-delete, .btn-update{
+    background-color: #51cbce;
+    color: #FFFFFF; 
+    border-color: #51cbce;
+    border-radius: 3px;
+    border-width: 2px;
+    font-weight: 600;
+    font-size: 0.8571em;
+    line-height: 1.35em;
+    text-transform: uppercase;
+    border: none;
+    margin: 15px 5px;
+    border-radius: 3px;
+    padding: 11px 22px;
+    cursor: pointer;
+}
+
+.lista .btn-delete:hover, .btn-update:hover{
+    background-color: #34b5b8 !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+.cursiva {
+    font-style: italic;
+}

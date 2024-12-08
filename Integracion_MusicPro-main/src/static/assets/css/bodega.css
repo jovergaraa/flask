@@ -1,0 +1,5 @@
+invert {
+    color: #f00;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
